@@ -1,0 +1,421 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		90D55CE71DB5193E00E3E026 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D55CE61DB5193E00E3E026 /* AppDelegate.swift */; };
+		90D55CE91DB5193E00E3E026 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D55CE81DB5193E00E3E026 /* ViewController.swift */; };
+		90D55CEC1DB5193E00E3E026 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90D55CEA1DB5193E00E3E026 /* Main.storyboard */; };
+		90D55CEE1DB5193E00E3E026 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90D55CED1DB5193E00E3E026 /* Assets.xcassets */; };
+		90D55CF11DB5193E00E3E026 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90D55CEF1DB5193E00E3E026 /* LaunchScreen.storyboard */; };
+		90D55CFC1DB5193F00E3E026 /* MHelloGCDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D55CFB1DB5193F00E3E026 /* MHelloGCDTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		90D55CF81DB5193F00E3E026 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90D55CDB1DB5193E00E3E026 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 90D55CE21DB5193E00E3E026;
+			remoteInfo = MHelloGCD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		90D55CE31DB5193E00E3E026 /* MHelloGCD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MHelloGCD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		90D55CE61DB5193E00E3E026 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		90D55CE81DB5193E00E3E026 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		90D55CEB1DB5193E00E3E026 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		90D55CED1DB5193E00E3E026 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		90D55CF01DB5193E00E3E026 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		90D55CF21DB5193E00E3E026 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90D55CF71DB5193F00E3E026 /* MHelloGCDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MHelloGCDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		90D55CFB1DB5193F00E3E026 /* MHelloGCDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHelloGCDTests.swift; sourceTree = "<group>"; };
+		90D55CFD1DB5193F00E3E026 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		90D55CE01DB5193E00E3E026 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90D55CF41DB5193F00E3E026 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		90D55CDA1DB5193E00E3E026 = {
+			isa = PBXGroup;
+			children = (
+				90D55CE51DB5193E00E3E026 /* MHelloGCD */,
+				90D55CFA1DB5193F00E3E026 /* MHelloGCDTests */,
+				90D55CE41DB5193E00E3E026 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		90D55CE41DB5193E00E3E026 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				90D55CE31DB5193E00E3E026 /* MHelloGCD.app */,
+				90D55CF71DB5193F00E3E026 /* MHelloGCDTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		90D55CE51DB5193E00E3E026 /* MHelloGCD */ = {
+			isa = PBXGroup;
+			children = (
+				90D55CE61DB5193E00E3E026 /* AppDelegate.swift */,
+				90D55CE81DB5193E00E3E026 /* ViewController.swift */,
+				90D55CEA1DB5193E00E3E026 /* Main.storyboard */,
+				90D55CED1DB5193E00E3E026 /* Assets.xcassets */,
+				90D55CEF1DB5193E00E3E026 /* LaunchScreen.storyboard */,
+				90D55CF21DB5193E00E3E026 /* Info.plist */,
+			);
+			path = MHelloGCD;
+			sourceTree = "<group>";
+		};
+		90D55CFA1DB5193F00E3E026 /* MHelloGCDTests */ = {
+			isa = PBXGroup;
+			children = (
+				90D55CFB1DB5193F00E3E026 /* MHelloGCDTests.swift */,
+				90D55CFD1DB5193F00E3E026 /* Info.plist */,
+			);
+			path = MHelloGCDTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		90D55CE21DB5193E00E3E026 /* MHelloGCD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90D55D001DB5193F00E3E026 /* Build configuration list for PBXNativeTarget "MHelloGCD" */;
+			buildPhases = (
+				90D55CDF1DB5193E00E3E026 /* Sources */,
+				90D55CE01DB5193E00E3E026 /* Frameworks */,
+				90D55CE11DB5193E00E3E026 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MHelloGCD;
+			productName = MHelloGCD;
+			productReference = 90D55CE31DB5193E00E3E026 /* MHelloGCD.app */;
+			productType = "com.apple.product-type.application";
+		};
+		90D55CF61DB5193F00E3E026 /* MHelloGCDTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90D55D031DB5193F00E3E026 /* Build configuration list for PBXNativeTarget "MHelloGCDTests" */;
+			buildPhases = (
+				90D55CF31DB5193F00E3E026 /* Sources */,
+				90D55CF41DB5193F00E3E026 /* Frameworks */,
+				90D55CF51DB5193F00E3E026 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				90D55CF91DB5193F00E3E026 /* PBXTargetDependency */,
+			);
+			name = MHelloGCDTests;
+			productName = MHelloGCDTests;
+			productReference = 90D55CF71DB5193F00E3E026 /* MHelloGCDTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		90D55CDB1DB5193E00E3E026 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = chenms.m2;
+				TargetAttributes = {
+					90D55CE21DB5193E00E3E026 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					90D55CF61DB5193F00E3E026 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 90D55CE21DB5193E00E3E026;
+					};
+				};
+			};
+			buildConfigurationList = 90D55CDE1DB5193E00E3E026 /* Build configuration list for PBXProject "MHelloGCD" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 90D55CDA1DB5193E00E3E026;
+			productRefGroup = 90D55CE41DB5193E00E3E026 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				90D55CE21DB5193E00E3E026 /* MHelloGCD */,
+				90D55CF61DB5193F00E3E026 /* MHelloGCDTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		90D55CE11DB5193E00E3E026 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90D55CF11DB5193E00E3E026 /* LaunchScreen.storyboard in Resources */,
+				90D55CEE1DB5193E00E3E026 /* Assets.xcassets in Resources */,
+				90D55CEC1DB5193E00E3E026 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90D55CF51DB5193F00E3E026 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		90D55CDF1DB5193E00E3E026 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90D55CE91DB5193E00E3E026 /* ViewController.swift in Sources */,
+				90D55CE71DB5193E00E3E026 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90D55CF31DB5193F00E3E026 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90D55CFC1DB5193F00E3E026 /* MHelloGCDTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		90D55CF91DB5193F00E3E026 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 90D55CE21DB5193E00E3E026 /* MHelloGCD */;
+			targetProxy = 90D55CF81DB5193F00E3E026 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		90D55CEA1DB5193E00E3E026 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90D55CEB1DB5193E00E3E026 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		90D55CEF1DB5193E00E3E026 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90D55CF01DB5193E00E3E026 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		90D55CFE1DB5193F00E3E026 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		90D55CFF1DB5193F00E3E026 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		90D55D011DB5193F00E3E026 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MHelloGCD/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = chenms.m2.MHelloGCD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		90D55D021DB5193F00E3E026 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MHelloGCD/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = chenms.m2.MHelloGCD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		90D55D041DB5193F00E3E026 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MHelloGCDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = chenms.m2.MHelloGCDTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MHelloGCD.app/MHelloGCD";
+			};
+			name = Debug;
+		};
+		90D55D051DB5193F00E3E026 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MHelloGCDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = chenms.m2.MHelloGCDTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MHelloGCD.app/MHelloGCD";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		90D55CDE1DB5193E00E3E026 /* Build configuration list for PBXProject "MHelloGCD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90D55CFE1DB5193F00E3E026 /* Debug */,
+				90D55CFF1DB5193F00E3E026 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90D55D001DB5193F00E3E026 /* Build configuration list for PBXNativeTarget "MHelloGCD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90D55D011DB5193F00E3E026 /* Debug */,
+				90D55D021DB5193F00E3E026 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		90D55D031DB5193F00E3E026 /* Build configuration list for PBXNativeTarget "MHelloGCDTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90D55D041DB5193F00E3E026 /* Debug */,
+				90D55D051DB5193F00E3E026 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 90D55CDB1DB5193E00E3E026 /* Project object */;
+}
