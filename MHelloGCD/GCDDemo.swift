@@ -66,7 +66,62 @@ class GCDDemo: NSObject {
         print("group finish.")
     }
     
+    // barrier
+    func barrier() {
+        let queue = DispatchQueue(label: "queue", attributes: DispatchQueue.Attributes.concurrent)
+        queue.async {
+            self.longtimeWork()
+            print("Before read 0")
+        }
+        queue.async {
+            self.longtimeWork()
+            print("Before read 1")
+        }
+        queue.async {
+            self.longtimeWork()
+            print("Before read 2")
+        }
+        
+        queue.async(execute: DispatchWorkItem(flags: .barrier, block: { 
+            self.longtimeWork()
+            print("barrier write")
+        }))
+        
+        queue.async {
+            self.longtimeWork()
+            print("After read 0")
+        }
+        queue.async {
+            self.longtimeWork()
+            print("After read 1")
+        }
+    }
+    
+    // apply
+    func apply() {
+        let array = [0, 1, 2, 3, 4, 5, 6]
+        DispatchQueue.concurrentPerform(iterations: array.count) { index in
+            self.longtimeWork()
+            print(index);
+        }
+    }
+    
+    // semaphore
+    func semaphore() {
+        let queue = DispatchQueue(label: "queue", attributes: DispatchQueue.Attributes.concurrent)
+        let semaphore = DispatchSemaphore(value: 1)
+        var array = Array<Int>()
+        for i in 0 ..< 1000 {
+            queue.async {
+                semaphore.wait()
+                array.append(i)
+                semaphore.signal()
+            }
+        }
+    }
+    
     // MARK: - long time work
+    
     private func longtimeWork() {
         var sum = 0
         for _ in 0 ..< 1000000 {

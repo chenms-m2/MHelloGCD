@@ -43,5 +43,39 @@ class ViewController: UIViewController {
         print("tap handle finish.")
     }
     
+    
+    // barrier
+    @IBAction func tapBarrier(_ sender: AnyObject) {
+        GCDDemo.sharedInstance.barrier()
+        print("tap handle finish.")
+    }
+    
+    @IBAction func tapBarrierOC(_ sender: AnyObject) {
+        GCDDemoOC.sharedInstance().barrier()
+        print("tap handle finish.")
+    }
+    
+    // apply
+    @IBAction func tapApply(_ sender: AnyObject) {
+        GCDDemo.sharedInstance.apply()
+        print("tap handle finish.")
+    }
+    
+    @IBAction func tapApplyOC(_ sender: AnyObject) {
+        GCDDemoOC.sharedInstance().apply()
+        print("tap handle finish.")
+    }
+    
+    // semaphore
+    @IBAction func tapSemaphore(_ sender: AnyObject) {
+        GCDDemo.sharedInstance.semaphore()
+        print("tap handle finish.")
+    }
+    
+    @IBAction func tapSemaphoreOC(_ sender: AnyObject) {
+        GCDDemoOC.sharedInstance().semaphore()
+        print("tap handle finish.")
+    }
+    
 }
 

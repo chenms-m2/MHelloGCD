@@ -30,6 +30,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rMw-Uh-Yec">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="1wn-9e-bxO"/>
+                                    <constraint firstAttribute="height" constant="30" id="eP2-Ha-Wsc"/>
+                                </constraints>
                                 <state key="normal" title="group OC"/>
                                 <connections>
                                     <action selector="tapGroupOC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ev6-3L-jje"/>
@@ -51,20 +55,84 @@
                                     <action selector="tapGroupEnterOC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wkf-kL-Tad"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SsR-FV-42Z">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="JWb-C0-Dtu"/>
+                                    <constraint firstAttribute="width" constant="100" id="fcu-tf-gFr"/>
+                                </constraints>
+                                <state key="normal" title="barrier"/>
+                                <connections>
+                                    <action selector="tapBarrier:" destination="BYZ-38-t0r" eventType="touchUpInside" id="85M-KQ-l0z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DSJ-96-B7y">
+                                <state key="normal" title="barrier OC"/>
+                                <connections>
+                                    <action selector="tapBarrierOC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J3g-Wr-qkM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6zM-Wr-CxR">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="cM7-zl-Ezr"/>
+                                    <constraint firstAttribute="width" constant="100" id="fXR-4M-sbt"/>
+                                </constraints>
+                                <state key="normal" title="apply"/>
+                                <connections>
+                                    <action selector="tapApply:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uPA-Aw-Xhz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7XF-ia-DCy">
+                                <state key="normal" title="apply OC"/>
+                                <connections>
+                                    <action selector="tapApplyOC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bSf-MM-uMy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WYV-Sy-FJB">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="2VU-1Z-YFm"/>
+                                    <constraint firstAttribute="height" constant="30" id="vdd-pp-TJF"/>
+                                </constraints>
+                                <state key="normal" title="semaphore"/>
+                                <connections>
+                                    <action selector="tapSemaphore:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bfp-ME-2az"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEj-Y9-aLg">
+                                <state key="normal" title="semaphore OC"/>
+                                <connections>
+                                    <action selector="tapSemaphoreOC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xce-Qu-P4L"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Iup-qh-t2Q" firstAttribute="height" secondItem="UoQ-uc-NFX" secondAttribute="height" id="7a6-DG-DQI"/>
-                            <constraint firstItem="Iup-qh-t2Q" firstAttribute="leading" secondItem="UoQ-uc-NFX" secondAttribute="trailing" constant="35" id="AHC-y7-SzM"/>
-                            <constraint firstItem="rMw-Uh-Yec" firstAttribute="height" secondItem="x88-ea-gpy" secondAttribute="height" id="Otw-Bu-j0k"/>
+                            <constraint firstItem="7XF-ia-DCy" firstAttribute="width" secondItem="DSJ-96-B7y" secondAttribute="width" id="09c-7q-zm3"/>
+                            <constraint firstItem="7XF-ia-DCy" firstAttribute="height" secondItem="DSJ-96-B7y" secondAttribute="height" id="96h-pX-n39"/>
+                            <constraint firstItem="qEj-Y9-aLg" firstAttribute="height" secondItem="7XF-ia-DCy" secondAttribute="height" id="BhI-YF-z7Y"/>
+                            <constraint firstItem="DSJ-96-B7y" firstAttribute="centerY" secondItem="SsR-FV-42Z" secondAttribute="centerY" id="EY4-v8-8KF"/>
+                            <constraint firstItem="7XF-ia-DCy" firstAttribute="centerX" secondItem="DSJ-96-B7y" secondAttribute="centerX" id="G0w-5B-6Fb"/>
+                            <constraint firstItem="qEj-Y9-aLg" firstAttribute="width" secondItem="7XF-ia-DCy" secondAttribute="width" id="KfF-UE-mHA"/>
+                            <constraint firstItem="Iup-qh-t2Q" firstAttribute="height" secondItem="rMw-Uh-Yec" secondAttribute="height" id="N4j-ms-JwU"/>
+                            <constraint firstItem="DSJ-96-B7y" firstAttribute="centerX" secondItem="Iup-qh-t2Q" secondAttribute="centerX" id="QZh-QP-w8V"/>
                             <constraint firstItem="UoQ-uc-NFX" firstAttribute="top" secondItem="x88-ea-gpy" secondAttribute="bottom" constant="20" id="VWU-nj-lRX"/>
+                            <constraint firstItem="qEj-Y9-aLg" firstAttribute="centerY" secondItem="WYV-Sy-FJB" secondAttribute="centerY" id="WKk-rP-MKB"/>
+                            <constraint firstItem="DSJ-96-B7y" firstAttribute="height" secondItem="Iup-qh-t2Q" secondAttribute="height" id="Y0c-6K-g9m"/>
                             <constraint firstItem="x88-ea-gpy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="Ymj-I2-jfs"/>
-                            <constraint firstItem="rMw-Uh-Yec" firstAttribute="leading" secondItem="x88-ea-gpy" secondAttribute="trailing" constant="64" id="gds-Ya-bGa"/>
-                            <constraint firstItem="rMw-Uh-Yec" firstAttribute="width" secondItem="x88-ea-gpy" secondAttribute="width" id="hOI-QZ-0Dz"/>
+                            <constraint firstItem="6zM-Wr-CxR" firstAttribute="centerX" secondItem="SsR-FV-42Z" secondAttribute="centerX" id="ZS6-KE-M4F"/>
+                            <constraint firstItem="SsR-FV-42Z" firstAttribute="top" secondItem="UoQ-uc-NFX" secondAttribute="bottom" constant="20" id="aYw-8v-xyt"/>
+                            <constraint firstItem="6zM-Wr-CxR" firstAttribute="top" secondItem="SsR-FV-42Z" secondAttribute="bottom" constant="20" id="bhe-2b-RPr"/>
+                            <constraint firstItem="WYV-Sy-FJB" firstAttribute="centerX" secondItem="6zM-Wr-CxR" secondAttribute="centerX" id="gvO-yN-rb4"/>
+                            <constraint firstItem="DSJ-96-B7y" firstAttribute="width" secondItem="Iup-qh-t2Q" secondAttribute="width" id="jrn-NG-iT4"/>
+                            <constraint firstItem="qEj-Y9-aLg" firstAttribute="centerX" secondItem="7XF-ia-DCy" secondAttribute="centerX" id="kDS-dx-kMW"/>
                             <constraint firstItem="Iup-qh-t2Q" firstAttribute="centerY" secondItem="UoQ-uc-NFX" secondAttribute="centerY" id="ka7-pB-HbV"/>
+                            <constraint firstItem="SsR-FV-42Z" firstAttribute="centerX" secondItem="UoQ-uc-NFX" secondAttribute="centerX" id="mBt-Gn-bQN"/>
                             <constraint firstItem="rMw-Uh-Yec" firstAttribute="centerY" secondItem="x88-ea-gpy" secondAttribute="centerY" id="mVS-fq-g5Z"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rMw-Uh-Yec" secondAttribute="trailing" constant="20" id="nbX-vI-4iZ"/>
+                            <constraint firstItem="Iup-qh-t2Q" firstAttribute="width" secondItem="rMw-Uh-Yec" secondAttribute="width" id="nu8-E3-U9o"/>
+                            <constraint firstItem="7XF-ia-DCy" firstAttribute="centerY" secondItem="6zM-Wr-CxR" secondAttribute="centerY" id="otA-NU-9H9"/>
                             <constraint firstItem="x88-ea-gpy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="qND-1m-cM2"/>
-                            <constraint firstItem="Iup-qh-t2Q" firstAttribute="width" secondItem="UoQ-uc-NFX" secondAttribute="width" id="vhU-hX-WRT"/>
+                            <constraint firstItem="Iup-qh-t2Q" firstAttribute="centerX" secondItem="rMw-Uh-Yec" secondAttribute="centerX" id="qkd-TB-JM1"/>
+                            <constraint firstItem="WYV-Sy-FJB" firstAttribute="top" secondItem="6zM-Wr-CxR" secondAttribute="bottom" constant="20" id="sbE-GV-b6X"/>
                             <constraint firstItem="UoQ-uc-NFX" firstAttribute="leading" secondItem="x88-ea-gpy" secondAttribute="leading" id="xDD-cT-n8X"/>
                         </constraints>
                     </view>

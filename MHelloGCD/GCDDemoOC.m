@@ -73,6 +73,64 @@
     NSLog(@"group finish.");
 }
 
+- (void)barrier {
+    dispatch_queue_t queue = dispatch_queue_create("queue", DISPATCH_QUEUE_CONCURRENT);
+    
+    dispatch_async(queue, ^{
+        [self longtimeWork];
+        NSLog(@"Before read 0");
+    });
+    
+    dispatch_async(queue, ^{
+        [self longtimeWork];
+        NSLog(@"Before read 1");
+    });
+    
+    dispatch_async(queue, ^{
+        [self longtimeWork];
+        NSLog(@"Before read 2");
+    });
+    
+    dispatch_barrier_async(queue, ^{
+        [self longtimeWork];
+        NSLog(@"barrier write");
+    });
+    
+    dispatch_async(queue, ^{
+        [self longtimeWork];
+        NSLog(@"After read 0");
+    });
+    
+    dispatch_async(queue, ^{
+        [self longtimeWork];
+        NSLog(@"After read 1");
+    });
+}
+
+- (void)apply {
+    dispatch_queue_t queue = dispatch_queue_create("queue", DISPATCH_QUEUE_CONCURRENT);
+    NSArray *array = @[@0, @1, @2, @3, @4, @5, @6];
+    dispatch_apply(array.count, queue, ^(size_t index) {
+        [self longtimeWork];
+        NSLog(@"%@", array[index]);
+    });
+}
+
+- (void)semaphore {
+    dispatch_queue_t queue = dispatch_queue_create("queue", DISPATCH_QUEUE_CONCURRENT);
+    NSMutableArray *array = [NSMutableArray array];
+    
+    dispatch_semaphore_t semaphore = dispatch_semaphore_create(1);
+    
+    for (NSInteger i = 0; i < 1000; i++) {
+        dispatch_async(queue, ^{
+            dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+            [array addObject:@(i)];
+            dispatch_semaphore_signal(semaphore);
+        });
+    }
+}
+
 // long time work
 - (void)longtimeWork {
     NSInteger sum = 0;

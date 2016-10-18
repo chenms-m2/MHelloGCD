@@ -12,4 +12,7 @@
 + (instancetype)sharedInstance;
 - (void)group;
 - (void)groupEnter;
+- (void)barrier;
+- (void)apply;
+- (void)semaphore;
 @end
