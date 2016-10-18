@@ -5,3 +5,7 @@
 
 ## MHelloGCD
 - gcd demo
+
+## 语言
+- swift 3
+- OC
