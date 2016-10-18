@@ -13,6 +13,8 @@
 		90D55CEE1DB5193E00E3E026 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90D55CED1DB5193E00E3E026 /* Assets.xcassets */; };
 		90D55CF11DB5193E00E3E026 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90D55CEF1DB5193E00E3E026 /* LaunchScreen.storyboard */; };
 		90D55CFC1DB5193F00E3E026 /* MHelloGCDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D55CFB1DB5193F00E3E026 /* MHelloGCDTests.swift */; };
+		90D55D361DB61EC600E3E026 /* GCDDemoOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D55D351DB61EC600E3E026 /* GCDDemoOC.m */; };
+		90D55D381DB6203E00E3E026 /* GCDDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D55D371DB6203E00E3E026 /* GCDDemo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,10 @@
 		90D55CF71DB5193F00E3E026 /* MHelloGCDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MHelloGCDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		90D55CFB1DB5193F00E3E026 /* MHelloGCDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHelloGCDTests.swift; sourceTree = "<group>"; };
 		90D55CFD1DB5193F00E3E026 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90D55D331DB61EC600E3E026 /* MHelloGCD-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MHelloGCD-Bridging-Header.h"; sourceTree = "<group>"; };
+		90D55D341DB61EC600E3E026 /* GCDDemoOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDDemoOC.h; sourceTree = "<group>"; };
+		90D55D351DB61EC600E3E026 /* GCDDemoOC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDDemoOC.m; sourceTree = "<group>"; };
+		90D55D371DB6203E00E3E026 /* GCDDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,9 +86,13 @@
 				90D55CE61DB5193E00E3E026 /* AppDelegate.swift */,
 				90D55CE81DB5193E00E3E026 /* ViewController.swift */,
 				90D55CEA1DB5193E00E3E026 /* Main.storyboard */,
+				90D55D371DB6203E00E3E026 /* GCDDemo.swift */,
+				90D55D341DB61EC600E3E026 /* GCDDemoOC.h */,
+				90D55D351DB61EC600E3E026 /* GCDDemoOC.m */,
 				90D55CED1DB5193E00E3E026 /* Assets.xcassets */,
 				90D55CEF1DB5193E00E3E026 /* LaunchScreen.storyboard */,
 				90D55CF21DB5193E00E3E026 /* Info.plist */,
+				90D55D331DB61EC600E3E026 /* MHelloGCD-Bridging-Header.h */,
 			);
 			path = MHelloGCD;
 			sourceTree = "<group>";
@@ -146,6 +156,7 @@
 				TargetAttributes = {
 					90D55CE21DB5193E00E3E026 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					90D55CF61DB5193F00E3E026 = {
@@ -199,8 +210,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90D55D361DB61EC600E3E026 /* GCDDemoOC.m in Sources */,
 				90D55CE91DB5193E00E3E026 /* ViewController.swift in Sources */,
 				90D55CE71DB5193E00E3E026 /* AppDelegate.swift in Sources */,
+				90D55D381DB6203E00E3E026 /* GCDDemo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,10 +352,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MHelloGCD/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = chenms.m2.MHelloGCD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MHelloGCD/MHelloGCD-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -351,10 +367,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MHelloGCD/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = chenms.m2.MHelloGCD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MHelloGCD/MHelloGCD-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -406,6 +424,7 @@
 				90D55D021DB5193F00E3E026 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		90D55D031DB5193F00E3E026 /* Build configuration list for PBXNativeTarget "MHelloGCDTests" */ = {
 			isa = XCConfigurationList;
@@ -414,6 +433,7 @@
 				90D55D051DB5193F00E3E026 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
